@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Link from 'next/link'
 
+import Header from '../src/components/Header.js'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -11,7 +12,7 @@ export default function Home() {
         <meta name="description" content="The Simplest Company" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Header />
       <main className={styles.main}>
         <h1 className={styles.title}>
           The Simplest Company
@@ -20,10 +21,6 @@ export default function Home() {
         <p className={styles.description}>
           Simple does not mean easy
         </p>
-
-        <Link href="/projects">
-          Projects
-        </Link>
       </main>
     </div>
   )
